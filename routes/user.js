@@ -5,7 +5,7 @@ const router = express.Router()
 
 //CONFIG DOS LOCAL E NOMES DOS ARQUIVOS
     //Logo
-    const logo = multer.diskStorage({
+    const storage = multer.diskStorage({
         destination: function (req, file, cb) {
             cb(null, "uploads/images")
         },
@@ -14,7 +14,7 @@ const router = express.Router()
         }
     })
 //Config Multer
-        const upload = multer({ logo })
+        const upload = multer({ storage })
 
 //Imgagens recebidas do Admin
     //Logo
