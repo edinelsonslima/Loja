@@ -1,0 +1,148 @@
+<div class="container">
+    <div class="row">
+        <!--CONFIG DA EDIÇÃO DOS SLIDES-->
+        <div class="col">
+            <div class="container col-md border">
+                <h2 style="text-align:center">EDITAR SLIDES</h2>
+                <div class="row">
+                    <div class="col border">
+                        <form action="/AindaVaiSerFeito" method="post">
+                            <h4 style="text-align:center">Alterar Descricao</h4>
+                            <hr id="linha" />
+                            <label> Alterar descricao Slide 1: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoSlide1" />
+                            <hr />
+                            <label> Alterar descricao Slide 2: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoSlide2" />
+                            <hr />
+                            <label> Alterar descricao Slide 3: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoSlide3" />
+                            <hr id="linha" />
+                            <button class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
+                            <hr />
+                        </form>
+                    </div>
+                    <div class="col border">
+                        <form action="/AindaVaiSerFeito" method="post">
+                            <h4 style="text-align:center">Alterar Marca</h4>
+                            <hr id="linha" />
+                            <label> Alterar Marca Slide 1: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="marcaSlide1" />
+                            <hr />
+                            <label> Alterar Marca Slide 2: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="marcaSlide2" />
+                            <hr />
+                            <label> Alterar Marca Slide 3: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="marcaSlide3" />
+                            <hr id="linha" />
+                            <button class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
+                        </form>
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col border">
+                        <form action="user/upload" method="post" enctype="multipart/form-data">
+                            <h4 style="text-align:center">Alterar Imagens</h4>
+                            <hr id="linha" />
+                            <label> Alterar Logo: </label>
+                            <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="logo" />
+                            <hr />
+                            <label> Alterar Slide 1: </label>
+                            <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="slide1" />
+                            <hr />
+                            <label> Alterar Slide 2: </label>
+                            <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="slide2" />
+                            <hr />
+                            <label> Alterar Slide 3: </label>
+                            <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="slide3" />
+                            <hr id="linha" />
+                            <button class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
+                        </form>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <!--CONFIG DOS PRODUTOS-->
+        <div class="col">
+            <div class="container col-md border">
+                <h2 style="text-align: center">EDITAR PRODUTOS</h2>
+                <div class="row">
+                    <div class="col border">
+                        <form action="#" method="post">
+                            <h4 style="text-align:center">Adicionar Bone</h4>
+                            <hr id="linha" />
+                            <label>Imagem do Bone: <br /></label>
+                            <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="imagemBone" />
+                            <hr />
+                            <label>Titulo ou Marca do Bone: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="tituloBone" />
+                            <hr />
+                            <label>Descricao do Bone:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoBone"/>
+                            <hr />
+                            <label>Unidades disponiveis:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="unidadesBone"/>
+                            <hr id="linha" />
+                            <button class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
+                            <hr />
+                        </form>
+                    </div>
+
+                    <div class="col border">
+                        <form action="#" method="post">
+                            <h4 style="text-align:center">Adicionar Camisa</h4>
+                            <hr id="linha" />
+                            <label>Imagem da Camisa: <br /></label>
+                            <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="imagemCamisa" />
+                            <hr />
+                            <label>Titulo ou Marca da Camisa: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCamisa"/>
+                            <hr />
+                            <label>Descricao da Camisa:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoCamisa"/>
+                            <hr />
+                            <label>Unidades disponiveis:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCamisa"/>
+                            <hr id="linha" />
+                            <button class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
+                            <hr />
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col border">
+                        <form action="#" method="post">
+                            <h4 style="text-align:center">Adicionar Carteira</h4>
+                            <hr id="linha" />
+                            <label>Imagem da Carteira: <br /></label>
+                            <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="imagemCarteira" />
+                            <hr />
+                            <label>Titulo ou Marca da Carteira: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCarteira"/>
+                            <hr />
+                            <label>Descricao da Carteira:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoCarteira"/>
+                            <hr />
+                            <label>Unidades disponiveis:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCarteira"/>
+                            <hr id="linha" />
+                            <button class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
+                            <hr />
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
