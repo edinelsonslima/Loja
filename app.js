@@ -2,14 +2,13 @@
 const express = require('express')
 const handlebars = require('express-handlebars')
 const bodyParser = require("body-parser")
-const app = express()
 const admin = require("./routes/admin")
 const user = require("./routes/user")
-
+const app = express()
 
 //configs
     //Pasta Static
-        app.use(express.static('uploads/images'))
+        app.use('/public', express.static(__dirname + '/public'))
     //Template Engine
         app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
         app.set('view engine', 'handlebars')
@@ -23,7 +22,6 @@ const user = require("./routes/user")
     app.use('/admin', admin)
 
 //Outros
-const PORT = 8081
-app.listen(PORT, function() {
+app.listen(8080, function () {
     console.log("Servidor rodando!")
 })

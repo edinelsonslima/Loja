@@ -52,7 +52,6 @@
         #carouselExampleCaptions {
             margin-top: 60px;
         }
-
     </style>
 
     <title>Jr Outlet</title>
@@ -60,6 +59,13 @@
 </head>
 <body>
     {{{body}}}
-</body>
 
+    <script>
+        var botaoEnviar = document.querySelector("#botaoEnviar");
+
+        botaoEnviar.addEventListener("click", () => {
+            alert("Formulario Enviada!!!")
+        })
+    </script>
+</body>
 </html>
