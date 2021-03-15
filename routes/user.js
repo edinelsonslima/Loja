@@ -15,7 +15,7 @@ const router = express.Router()
         }
     })
 //Config Multer
-const upload = multer({ storage })
+        const upload = multer({ storage })
 
 //Imgagens recebidas do Admin
     //Logo
