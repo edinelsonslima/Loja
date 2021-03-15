@@ -10,7 +10,7 @@ const router = express.Router()
             cb(null, "uploads/images")
         },
         filename: function (req, file, cb) {
-            cb(null, "logo")
+            cb(null, "logo.png")
         }
     })
 //Config Multer
