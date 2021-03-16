@@ -1,26 +1,3 @@
- <!--NavBar config-->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="/user"> PAGINA PRINCIPAL </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-                <a class="nav-link" href="#">Bones<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Camisas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">Carteiras</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-
 <div class="container" id="carouselExampleCaptions">
     <div class="row">
         <div class="col-sm">
@@ -31,11 +8,11 @@
                 <div class="col border">
                     <h4 style="text-align:center">Logo</h4>
                     <hr id="linha" />
-                    <form action="user/upload" method="post" enctype="multipart/form-data">
+                    <form action="recebeLogo/upload" method="post" enctype="multipart/form-data">
                         <div class="input-group-append">
                             <label>
                                 <span class="input-file-btn">
-                                    <input type="file" name="logo" readonly hidden>
+                                    <input type="file" name="logo" hidden>
                                 </span>
                             </label>
                             <input name="logo" type="text" class="form-control btn btn-outline-light input-file-dummy" placeholder="Sua Logo" aria-describedby="fileHelp">
@@ -59,7 +36,7 @@
                     <hr id="linha" />
 
                     <!--Form Para Inserir Imagem-->
-                    <form action="/AindaVaiSerFeito" method="post" enctype="multipart/form-data">
+                    <form action="recebeSlide1/upload" method="post" enctype="multipart/form-data">
                         <div class="input-group-append">
                             <label>
                                 <span class="input-file-btn">
@@ -78,7 +55,7 @@
                     <h4 style="text-align:center">Slide 2</h4>
                     <hr id="linha" />
                     <!--Form Para Inserir Imagem-->
-                    <form action="user/upload" method="post" enctype="multipart/form-data">
+                    <form action="recebeSlide2/upload" method="post" enctype="multipart/form-data">
                         <div class="input-group-append">
                             <label>
                                 <span class="input-file-btn">
@@ -97,7 +74,7 @@
                     <h4 style="text-align:center">Slide 3</h4>
                     <hr id="linha" />
                     <!--Form Para Inserir Imagem-->
-                    <form action="user/upload" method="post" enctype="multipart/form-data">
+                    <form action="recebeSlide3/upload" method="post" enctype="multipart/form-data">
                         <div class="input-group-append">
                             <label>
                                 <span class="input-file-btn">
