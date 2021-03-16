@@ -1,5 +1,7 @@
 const express = require('express')
+const { request } = require('https')
 const multer = require('multer')
+const { parse } = require('qs')
 //const { config } = require('process')
 const router = express.Router()
 
@@ -10,7 +12,7 @@ const router = express.Router()
             cb(null, "public/images")
         },
         filename: function (req, file, cb) {
-            cb(null, "loo.png")
+            cb(null, "logo.png")
         }
     })
 
@@ -22,12 +24,10 @@ const upload = multer({ storage })
 //Imgagens recebidas do Admin
     //Logo
 router.post('/upload', upload.single('logo'), (req, res) => {
-    console.log("Logo Enviado para o Back End")
-        })
+    var marca = req.body.marcaSlide1
+    res.send(marca)
+            })
 
-router.post('/upload', upload.single('Slide1'), (req, res) => {
-    console.log("Slide1 Enviado para o Back End")
-})
 
 
 router.get('/', (req, res) => {

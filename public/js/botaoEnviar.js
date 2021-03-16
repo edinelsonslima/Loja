@@ -22,3 +22,11 @@ $(function () {
         });
     });
 });
+    
+    function marcaSlide1() {
+        var marcaSlide1 = TESTE_DEU_CERTO;
+       // marcaSlide1 = document.getElementById("marcaSlide1").value;
+        console.log(marcaSlide1)
+        return (marcaSlide1);
+    }
+                       

@@ -1,24 +1,52 @@
-<div class="container">
+ <!--NavBar config-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/user"> PAGINA PRINCIPAL </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Bones<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Camisas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Carteiras</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container" id="carouselExampleCaptions">
     <div class="row">
-        <div class="col">
+        <div class="col-sm">
             <!--CONFIG DA EDIÇÃO DA LOGO-->
-            <div class="container col-md">
+            <div class="container">
                 <h2 style="text-align:center">EDITAR LOGO</h2>
+                <!--FORM PARA EDITAR IMAGEM DA LOGO-->
                 <div class="col border">
                     <h4 style="text-align:center">Logo</h4>
                     <hr id="linha" />
                     <form action="user/upload" method="post" enctype="multipart/form-data">
-                        <label class="input-group-peprend mb-0">
-                            <span class="input-file-btn">
-                                <input type="file" name="logo" readonly="readonly" hidden>
-                            </span>
-                        </label>
-                        <input name="logo" type="text" class="btn btn-outline-light input-file-dummy" placeholder="Foto para logo.png" aria-describedby="fileHelp" readonly="readonly" required>
-                        <button id="botaoEnviar" class="btn btn-outline-light mx-4" type="submit">ENVIAR</button>
+                        <div class="input-group-append">
+                            <label>
+                                <span class="input-file-btn">
+                                    <input type="file" name="logo" readonly hidden>
+                                </span>
+                            </label>
+                            <input name="logo" type="text" class="form-control btn btn-outline-light input-file-dummy" placeholder="Sua Logo" aria-describedby="fileHelp">
+                            <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                        </div>
                     </form>
                     <hr />
                 </div>
+                <hr />
             </div>
+
             <hr />
 
             <!--CONFIG DA EDIÇÃO DOS SLIDES-->
@@ -32,28 +60,17 @@
 
                     <!--Form Para Inserir Imagem-->
                     <form action="/AindaVaiSerFeito" method="post" enctype="multipart/form-data">
-                        <label class="input-group">
-                            <span class="input-file-btn">
-                                <input type="file" name="slide1" hidden>
-                            </span>
-                        </label>
-                        <input name="slide1" type="text" class="btn btn-outline-light input-file-dummy" placeholder="Foto para Slide1.png" aria-describedby="fileHelp" required>
-                        <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                        <div class="input-group-append">
+                            <label>
+                                <span class="input-file-btn">
+                                    <input type="file" name="slide1" hidden>
+                                </span>
+                            </label>
+                            <input name="slide1" type="text" class="form-control btn btn-outline-light input-file-dummy" placeholder="Imagem para Slide 1" aria-describedby="fileHelp">
+                            <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                        </div>
                     </form>
-
-                    <!--Form Para Inserir Marca e Descricao-->
                     <hr />
-                    <form action="/AindaVaiSerFeito" method="post">
-                        <label> Alterar Marca Slide 1: </label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="marcaSlide1" />
-                        <hr />
-                        <label> Alterar descricao Slide 1: </label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="descricaoSlide1" />
-                        <hr id="linha" />
-                        <button class="btn btn-outline-light" type="submit">ENVIAR</button>
-                        <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
-                        <hr />
-                    </form>
                 </div>
                 <hr />
                 <!--CARD SLIDE 2-->
@@ -62,72 +79,63 @@
                     <hr id="linha" />
                     <!--Form Para Inserir Imagem-->
                     <form action="user/upload" method="post" enctype="multipart/form-data">
-                        <label class="input-group">
-                            <span class="input-file-btn">
-                                <input type="file" name="slide2" hidden>
-                            </span>
-                        </label>
-                        <input name="slide2" type="text" class="btn btn-outline-light input-file-dummy" placeholder="Foto para Slide2.png" aria-describedby="fileHelp" required>
-                        <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                        <div class="input-group-append">
+                            <label>
+                                <span class="input-file-btn">
+                                    <input type="file" name="slide2" hidden>
+                                </span>
+                            </label>
+                            <input name="slide2" type="text" class="form-control btn btn-outline-light input-file-dummy" placeholder="Imagem para Slide 2" aria-describedby="fileHelp">
+                            <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                        </div>
                     </form>
-
-                    <!--Form Para Inserir Marca e Descricao-->
-                    <form action="/AindaVaiSerFeito" method="post">
-                        <hr />
-                        <label> Alterar Marca Slide 2: </label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="marcaSlide2" />
-                        <hr />
-                        <label> Alterar descricao Slide 2: </label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="descricaoSlide2" />
-                        <hr />
-                        <hr id="linha" />
-                        <button class="btn btn-outline-light" type="submit">ENVIAR</button>
-                        <a href="/" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
-                        <hr />
-                    </form>
+                    <hr />
                 </div>
                 <hr />
                 <!--CARD SLIDE 3-->
                 <div class="col border">
-                    <h4 style="text-align:center">Alterar Imagens</h4>
+                    <h4 style="text-align:center">Slide 3</h4>
                     <hr id="linha" />
                     <!--Form Para Inserir Imagem-->
                     <form action="user/upload" method="post" enctype="multipart/form-data">
-                        <label class="input-group">
-                            <span class="input-file-btn">
-                                <input type="file" name="slide3" hidden>
-                            </span>
-                        </label>
-                        <input name="slide3" type="text" class="btn btn-outline-light input-file-dummy" placeholder="Foto para Slide3.png" aria-describedby="fileHelp" required>
-                        <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                        <div class="input-group-append">
+                            <label>
+                                <span class="input-file-btn">
+                                    <input type="file" name="slide3" hidden>
+                                </span>
+                            </label>
+                            <input name="slide3" type="text" class="form-control btn btn-outline-light input-file-dummy" placeholder="Imagem para Slide 3" aria-describedby="fileHelp">
+                            <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                        </div>
                     </form>
-                    <!--Form Para Inserir Marca e Descricao-->
-                    <form action="/AindaVaiSerFeito" method="post">
-                        <hr />
-                        <label> Alterar Marca Slide 3: </label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="marcaSlide3" />
-                        <hr />
-                        <label> Alterar descricao Slide 3: </label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="descricaoSlide3" />
-                        <hr id="linha" />
-                        <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
-                        <hr />
-                    </form>
+                    <hr />
                 </div>
+                <hr />
             </div>
         </div>
-        
+
         <!--CONFIG DOS PRODUTOS-->
         <div class="col">
             <div class="container col-md">
                 <h2 style="text-align: center">EDITAR PRODUTOS</h2>
+
+                <!--FORM PARA EDITAR PRODUTO BONE-->
                 <div class="col border">
+                    <h4 style="text-align:center">Adicionar Bone</h4>
+                    <hr id="linha" />
+                    <!--FORM PARA EDITAR IMAGEM PRODUTO BONÉ-->
                     <form action="#" method="post">
-                        <h4 style="text-align:center">Adicionar Bone</h4>
-                        <hr id="linha" />
-                        <label>Imagem do Bone: <br /></label>
-                        <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="imagemBone" />
+                        <label>Imagem do Bone:</label>
+                        <label>
+                            <span class="input-file-btn">
+                                <input type="file" name="imagemBone" hidden />
+                            </span>
+                        </label>
+                        <input name="imagemBone" type="text" class="btn btn-outline-light btn-sm input-file-dummy" placeholder="Foto do bone.png" aria-describedby="fileHelp" required />
+
                         <hr />
+
+                        <!--EDITAR CARACTERISTICAS PRODUTO BONÉ-->
                         <label>Titulo ou Marca do Bone: </label>
                         <input class="btn btn-outline-light btn-sm" type="text" name="tituloBone" />
                         <hr />
@@ -137,19 +145,30 @@
                         <label>Unidades disponiveis:</label>
                         <input class="btn btn-outline-light btn-sm" type="text" name="unidadesBone" />
                         <hr id="linha" />
-                        <button class="btn btn-outline-light" type="submit">ENVIAR</button>
-                        <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
+                        <button class="btn btn-outline-light" type="submit">ADICIONAR</button>                        
                         <hr />
                     </form>
                 </div>
+
                 <hr />
+
+                <!--FORM PARA EDITAR PRODUTO CAMISA-->
                 <div class="col border">
+                    <h4 style="text-align:center">Adicionar Camisa</h4>
+                    <hr id="linha" />
+                    <!--FORM PARA EDITAR IMAGEM PRODUTO CAMISA-->
                     <form action="#" method="post">
-                        <h4 style="text-align:center">Adicionar Camisa</h4>
-                        <hr id="linha" />
-                        <label>Imagem da Camisa: <br /></label>
-                        <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="imagemCamisa" />
+                        <label>Imagem do Camisa:</label>
+                        <label>
+                            <span class="input-file-btn">
+                                <input type="file" name="imagemCamisa" hidden />
+                            </span>
+                        </label>
+                        <input name="imagemCamisa" type="text" class="btn btn-outline-light btn-sm input-file-dummy" placeholder="Foto da Camisa.png" aria-describedby="fileHelp" required />
+
                         <hr />
+
+                        <!--EDITAR PRODUTO BONÉ-->
                         <label>Titulo ou Marca da Camisa: </label>
                         <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCamisa" />
                         <hr />
@@ -159,20 +178,31 @@
                         <label>Unidades disponiveis:</label>
                         <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCamisa" />
                         <hr id="linha" />
-                        <button class="btn btn-outline-light" type="submit">ENVIAR</button>
-                        <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
+                        <button class="btn btn-outline-light" type="submit">ADICIONAR</button>
                         <hr />
                     </form>
                 </div>
+
                 <hr />
 
+                <!--FORM PARA EDITAR PRODUTO CARTEIRA-->
                 <div class="col border">
+                    <h4 style="text-align:center">Adicionar Carteira</h4>
+                    <hr id="linha" />
+
+                    <!--FORM PARA EDITAR IMAGEM PRODUTO CAMISA-->
                     <form action="#" method="post">
-                        <h4 style="text-align:center">Adicionar Carteira</h4>
-                        <hr id="linha" />
-                        <label>Imagem da Carteira: <br /></label>
-                        <input class="btn btn-outline-light btn-sm form-control-file" type="file" name="imagemCarteira" />
+                        <label>Imagem do Camisa:</label>
+                        <label>
+                            <span class="input-file-btn">
+                                <input type="file" name="imagemCarteira" hidden />
+                            </span>
+                        </label>
+                        <input name="imagemCarteira" type="text" class="btn btn-outline-light btn-sm input-file-dummy" placeholder="Foto da Carteira.png" aria-describedby="fileHelp" required />
+
                         <hr />
+
+                        <!--EDITAR CARACTERISTICAS DO PRODUTO CARTEIRA-->
                         <label>Titulo ou Marca da Carteira: </label>
                         <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCarteira" />
                         <hr />
@@ -182,8 +212,7 @@
                         <label>Unidades disponiveis:</label>
                         <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCarteira" />
                         <hr id="linha" />
-                        <button class="btn btn-outline-light" type="submit">ENVIAR</button>
-                        <a href="/user" class="btn btn-outline-light my-2 my-sm-0">VOLTAR</a>
+                        <button class="btn btn-outline-light" type="submit">ADICIONAR</button>
                         <hr />
                     </form>
                 </div>
