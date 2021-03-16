@@ -8,15 +8,15 @@
                 <div class="col border">
                     <h4 style="text-align:center">Logo</h4>
                     <hr id="linha" />
-                    <form action="recebeLogo/upload" method="post" enctype="multipart/form-data">
+                    <form id="main-contact-form" action="recebeLogo/upload" method="post" enctype="multipart/form-data">
                         <div class="input-group-append">
                             <label>
                                 <span class="input-file-btn">
-                                    <input type="file" name="logo" hidden>
+                                    <input type="file" name="logo" hidden required>
                                 </span>
                             </label>
                             <input name="logo" type="text" class="form-control btn btn-outline-light input-file-dummy" placeholder="Sua Logo" aria-describedby="fileHelp">
-                            <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <button id="botaoEnviarLogo" class="btn btn-outline-light" type="submit">ENVIAR</button>
                         </div>
                     </form>
                     <hr />
@@ -44,7 +44,7 @@
                                 </span>
                             </label>
                             <input name="slide1" type="text" class="form-control btn btn-outline-light input-file-dummy" placeholder="Imagem para Slide 1" aria-describedby="fileHelp">
-                            <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <button id="botaoEnviarSlide1" class="btn btn-outline-light" type="submit">ENVIAR</button>
                         </div>
                     </form>
                     <hr />
@@ -63,7 +63,7 @@
                                 </span>
                             </label>
                             <input name="slide2" type="text" class="form-control btn btn-outline-light input-file-dummy" placeholder="Imagem para Slide 2" aria-describedby="fileHelp">
-                            <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <button id="botaoEnviarSlide2" class="btn btn-outline-light" type="submit">ENVIAR</button>
                         </div>
                     </form>
                     <hr />
@@ -82,7 +82,7 @@
                                 </span>
                             </label>
                             <input name="slide3" type="text" class="form-control btn btn-outline-light input-file-dummy" placeholder="Imagem para Slide 3" aria-describedby="fileHelp">
-                            <button id="botaoEnviar" class="btn btn-outline-light" type="submit">ENVIAR</button>
+                            <button id="botaoEnviarSlide3" class="btn btn-outline-light" type="submit">ENVIAR</button>
                         </div>
                     </form>
                     <hr />

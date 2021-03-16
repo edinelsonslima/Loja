@@ -1,12 +1,6 @@
 const express = require('express')
-const router = express.Router()
-const { request } = require('https')
 const multer = require('multer')
-const { parse } = require('qs')
-const { config } = require('process')
-
-
-
+const router = express.Router()
 
 //CONFIG DOS LOCAL E NOMES DOS ARQUIVOS
     //Logo
@@ -25,9 +19,9 @@ const upload = multer({ storage })
 
 //Imgagens recebidas do Admin
     //Logo
-        router.post('/upload', upload.single('logo'), (req, res) => {
-            console.log('files', req.files)
-                })
+    router.post('/upload', upload.single('logo'), (req, res) => {
+        res.redirect('/admin')
+    })
 
 
 module.exports = router;

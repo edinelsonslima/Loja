@@ -19,10 +19,10 @@ const upload = multer({ storage })
 
 
 //Imgagens recebidas do Admin
-//Logo
-router.post('/upload', upload.single('slide2'), (req, res) => {
-    console.log('files', req.files)
-})
+    //Logo
+        router.post('/upload', upload.single('slide2'), (req, res) => {
+            res.redirect('/admin')
+        })
 
 
 module.exports = router;
