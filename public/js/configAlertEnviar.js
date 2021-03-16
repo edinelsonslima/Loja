@@ -42,7 +42,7 @@ botao.addEventListener('click', (event) => {
 var botao = document.querySelector("#botaoEnviarSlide3");
 
 botao.addEventListener('click', (event) => {
-    if ($('input[name = "slide2"]').val()) {
+    if ($('input[name = "slide3"]').val()) {
         alert("Slide 3 enviada com Sucesso");
     }
     else {
