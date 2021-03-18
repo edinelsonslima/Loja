@@ -1,7 +1,8 @@
-//Carregando m�dulos
+//Carregando modulos
     const express = require('express')
     const handlebars = require('express-handlebars')
     const bodyParser = require("body-parser")
+    const mysql = require('mysql2')
     const app = express()
 
 //Modulos da Pasta Routes
@@ -12,7 +13,26 @@
     const recebeSlide2 = require("./routes/recebeSlide2")
     const recebeSlide3 = require("./routes/recebeSlide3")
 
+//Config teste MySQL
+/*const con = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'admin',
+    database: 'loja'
+});
+con.connect((err) => {
+    if (err) {
+        console.log('Erro connecting to database...', err)
+        return
+    }
+    console.log('Connection established!')
+})
 
+//COMANDO SELECT * FROM
+con.query('SELECT * FROM bone;', ( rows) => {
+        console.log('id: ',rows, '\n\n')
+})
+*/
 //configs
     //Pasta Static
         app.use('/public', express.static(__dirname + '/public'))

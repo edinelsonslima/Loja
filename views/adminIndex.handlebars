@@ -1,7 +1,110 @@
 <div class="container" id="carouselExampleCaptions">
     <div class="row">
+         <!--CONFIG DOS PRODUTOS-->
+            <div class="container col-md">
+                <h2 style="text-align: center">EDITAR PRODUTOS</h2>
+
+                    <!--FORM PARA EDITAR PRODUTO BONE-->
+                    <div class="col border">
+                        <h4 style="text-align:center">Adicionar Bone</h4>
+                        <hr id="linha" />
+                        <!--FORM PARA EDITAR IMAGEM PRODUTO BONE-->
+                        <form action="#" method="post">
+                            <label>Imagem do Bone:</label>
+                            <label>
+                                <span class="input-file-btn">
+                                    <input type="file" name="imagemBone" hidden />
+                                </span>
+                            </label>
+                            <input name="imagemBone" type="text" class="btn btn-outline-light btn-sm input-file-dummy" placeholder="Foto do bone.png" aria-describedby="fileHelp" required />
+
+                            <hr />
+                    
+                            <!--EDITAR CARACTERISTICAS PRODUTO BONE-->
+                            <label>Titulo ou Marca do Bone: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="tituloBone" />
+                            <hr />
+                            <label>Descricao do Bone:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoBone" />
+                            <hr />
+                            <label>Unidades disponiveis:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="unidadesBone" />
+                            <hr id="linha" />
+                            <button class="btn btn-outline-light" type="submit">ADICIONAR</button>                        
+                            <hr />
+                        </form>
+                    </div>    
+                    <hr />
+
+                    <!--FORM PARA EDITAR PRODUTO CAMISA-->
+                    <div class="col border">
+                        <h4 style="text-align:center">Adicionar Camisa</h4>
+                        <hr id="linha" />
+                        <!--FORM PARA EDITAR IMAGEM PRODUTO CAMISA-->
+                        <form action="#" method="post">
+                            <label>Imagem do Camisa:</label>
+                            <label>
+                                <span class="input-file-btn">
+                                    <input type="file" name="imagemCamisa" hidden />
+                                </span>
+                            </label>
+                            <input name="imagemCamisa" type="text" class="btn btn-outline-light btn-sm input-file-dummy" placeholder="Foto da Camisa.png" aria-describedby="fileHelp" required />
+
+                            <hr />
+
+                            <!--EDITAR PRODUTO CAMISA-->
+                            <label>Titulo ou Marca da Camisa: </label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCamisa" />
+                            <hr />
+                            <label>Descricao da Camisa:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoCamisa" />
+                            <hr />
+                            <label>Unidades disponiveis:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCamisa" />
+                            <hr id="linha" />
+                            <button class="btn btn-outline-light" type="submit">ADICIONAR</button>
+                            <hr />
+                        </form>
+                    </div>
+           
+                     <hr />
+
+                <!--FORM PARA EDITAR PRODUTO CARTEIRA-->
+                <div class="col border">
+                    <h4 style="text-align:center">Adicionar Carteira</h4>
+                    <hr id="linha" />
+
+                    <!--FORM PARA EDITAR IMAGEM PRODUTO CAMISA-->
+                    <form action="#" method="post">
+                        <label>Imagem do Camisa:</label>
+                        <label>
+                            <span class="input-file-btn">
+                                <input type="file" name="imagemCarteira" hidden />
+                            </span>
+                        </label>
+                        <input name="imagemCarteira" type="text" class="btn btn-outline-light btn-sm input-file-dummy" placeholder="Foto da Carteira.png" aria-describedby="fileHelp" required />
+
+                        <hr />
+
+                        <!--EDITAR CARACTERISTICAS DO PRODUTO CARTEIRA-->
+                        <label>Titulo ou Marca da Carteira: </label>
+                        <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCarteira" />
+                        <hr />
+                        <label>Descricao da Carteira:</label>
+                        <input class="btn btn-outline-light btn-sm" type="text" name="descricaoCarteira" />
+                        <hr />
+                        <label>Unidades disponiveis:</label>
+                        <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCarteira" />
+                        <hr id="linha" />
+                        <button class="btn btn-outline-light" type="submit">ADICIONAR</button>
+                        <hr />
+                    </form>
+                </div>
+            </div>
+
+        <!--CONFI DA LOGO E SLIDE-->
         <div class="col-sm">
-            <!--CONFIG DA EDIÇÃO DA LOGO-->
+            <!--CONFIG DA EDICAO DA LOGO-->
             <div class="container">
                 <h2 style="text-align:center">EDITAR LOGO</h2>
                 <!--FORM PARA EDITAR IMAGEM DA LOGO-->
@@ -26,7 +129,7 @@
 
             <hr />
 
-            <!--CONFIG DA EDIÇÃO DOS SLIDES-->
+            <!--CONFIG DA EDICAOO DOS SLIDES-->
             <div class="container col-md">
                 <h2 style="text-align:center">EDITAR SLIDES</h2>
 
@@ -89,111 +192,6 @@
                 </div>
                 <hr />
             </div>
-        </div>
-
-        <!--CONFIG DOS PRODUTOS-->
-        <div class="col">
-            <div class="container col-md">
-                <h2 style="text-align: center">EDITAR PRODUTOS</h2>
-
-                <!--FORM PARA EDITAR PRODUTO BONE-->
-                <div class="col border">
-                    <h4 style="text-align:center">Adicionar Bone</h4>
-                    <hr id="linha" />
-                    <!--FORM PARA EDITAR IMAGEM PRODUTO BONÉ-->
-                    <form action="#" method="post">
-                        <label>Imagem do Bone:</label>
-                        <label>
-                            <span class="input-file-btn">
-                                <input type="file" name="imagemBone" hidden />
-                            </span>
-                        </label>
-                        <input name="imagemBone" type="text" class="btn btn-outline-light btn-sm input-file-dummy" placeholder="Foto do bone.png" aria-describedby="fileHelp" required />
-
-                        <hr />
-
-                        <!--EDITAR CARACTERISTICAS PRODUTO BONÉ-->
-                        <label>Titulo ou Marca do Bone: </label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="tituloBone" />
-                        <hr />
-                        <label>Descricao do Bone:</label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="descricaoBone" />
-                        <hr />
-                        <label>Unidades disponiveis:</label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="unidadesBone" />
-                        <hr id="linha" />
-                        <button class="btn btn-outline-light" type="submit">ADICIONAR</button>                        
-                        <hr />
-                    </form>
-                </div>
-
-                <hr />
-
-                <!--FORM PARA EDITAR PRODUTO CAMISA-->
-                <div class="col border">
-                    <h4 style="text-align:center">Adicionar Camisa</h4>
-                    <hr id="linha" />
-                    <!--FORM PARA EDITAR IMAGEM PRODUTO CAMISA-->
-                    <form action="#" method="post">
-                        <label>Imagem do Camisa:</label>
-                        <label>
-                            <span class="input-file-btn">
-                                <input type="file" name="imagemCamisa" hidden />
-                            </span>
-                        </label>
-                        <input name="imagemCamisa" type="text" class="btn btn-outline-light btn-sm input-file-dummy" placeholder="Foto da Camisa.png" aria-describedby="fileHelp" required />
-
-                        <hr />
-
-                        <!--EDITAR PRODUTO BONÉ-->
-                        <label>Titulo ou Marca da Camisa: </label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCamisa" />
-                        <hr />
-                        <label>Descricao da Camisa:</label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="descricaoCamisa" />
-                        <hr />
-                        <label>Unidades disponiveis:</label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCamisa" />
-                        <hr id="linha" />
-                        <button class="btn btn-outline-light" type="submit">ADICIONAR</button>
-                        <hr />
-                    </form>
-                </div>
-
-                <hr />
-
-                <!--FORM PARA EDITAR PRODUTO CARTEIRA-->
-                <div class="col border">
-                    <h4 style="text-align:center">Adicionar Carteira</h4>
-                    <hr id="linha" />
-
-                    <!--FORM PARA EDITAR IMAGEM PRODUTO CAMISA-->
-                    <form action="#" method="post">
-                        <label>Imagem do Camisa:</label>
-                        <label>
-                            <span class="input-file-btn">
-                                <input type="file" name="imagemCarteira" hidden />
-                            </span>
-                        </label>
-                        <input name="imagemCarteira" type="text" class="btn btn-outline-light btn-sm input-file-dummy" placeholder="Foto da Carteira.png" aria-describedby="fileHelp" required />
-
-                        <hr />
-
-                        <!--EDITAR CARACTERISTICAS DO PRODUTO CARTEIRA-->
-                        <label>Titulo ou Marca da Carteira: </label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCarteira" />
-                        <hr />
-                        <label>Descricao da Carteira:</label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="descricaoCarteira" />
-                        <hr />
-                        <label>Unidades disponiveis:</label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCarteira" />
-                        <hr id="linha" />
-                        <button class="btn btn-outline-light" type="submit">ADICIONAR</button>
-                        <hr />
-                    </form>
-                </div>
-            </div>
-        </div>
+        </div> 
     </div>
 </div>
