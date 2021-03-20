@@ -20,7 +20,7 @@
                     Produtos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <button id="nav0" class="dropdown-item" href="#">Bonés    </button>
+                    <button id="nav0" class="dropdown-item" href="#">Bonï¿½s    </button>
                     <button id="nav2" class="dropdown-item" href="#">Camisas   </button>
                     <button id="nav1" class="dropdown-item" href="#">Carteiras</button>
                 </div>
@@ -71,34 +71,51 @@
 
 <hr id="linha">
 
-<!--Botões de opções-->
+<!--Botï¿½es de opï¿½ï¿½es-->
 <section>
     <div class="row-col" id="opcoes">
-        <button id="Aba0" href="#" class="btn btn-outline-light mx-4"> BONÉS       </button>
+        <button id="Aba0" href="#" class="btn btn-outline-light mx-4"> BONï¿½S       </button>
         <button id="Aba1" href="#" class="btn btn-outline-light mx-4"> CARTEIRAS   </button>
         <button id="Aba2" href="#" class="btn btn-outline-light mx-4"> CAMISAS     </button>
-        <button id="Aba3" href="#" class="btn btn-outline-light mx-4"> MAIS OPÇÕES </button>
+        <button id="Aba3" href="#" class="btn btn-outline-light mx-4"> MAIS OPï¿½ï¿½ES </button>
     </div>
 </section>
 
 <hr id="linha">
 
-<!--Seções de venda-->
+<!--Seï¿½ï¿½es de venda-->
 
 <main>
-    <!--Bonés-->
+    <!--Bonï¿½s-->
     <div class="container">
         <div class="container" id="vitrine-bone">
             <div class="card-deck">
-                <div class="card" id="#produto-background">
+                <div class="card" id="produto-background">
                     <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{tituloBone}}</h5>
-                        <p class="card-text">{{descricaoBone}}</p>
-                        <p class="card-text"><small class="text-dark">{{unidadesBone}}</small></p>
+                        <h5 class="card-title">{{dataValues.marcaBone}}oi</h5>
+                        <p class="card-text">{{dataValues.descricaobone}}</p>
+                        <p class="card-text"><small class="text-dark">{{dataValues.unidadesBone}}</small></p>
                     </div>
+                </div>                 
+                <hr id="linha">
+                <div class="card" id="produto-background">
+                    <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> {{{bone.marca}}}</h5>
+                        <p class="card-text">{{bone.descricao}}</p>
+                        <p class="card-text"><small class="text-dark">{{bone.unidades}}</small></p>
+                    </div>                    
                 </div>
                 <hr id="linha">
+                <div class="card" id="produto-background">
+                    <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> {{{bone.marca}}}</h5>
+                        <p class="card-text">{{bone.descricao}}</p>
+                        <p class="card-text"><small class="text-dark">{{bone.unidades}}</small></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -107,7 +124,7 @@
     <div class="container">
         <div class="container" id="vitrine-carteiras">
             <div class="card-deck">
-                <div class="card" id="#produto-background">
+                <div class="card" id="produto-background">
                     <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{tituloCarteira}}</h5>
@@ -116,7 +133,9 @@
                     </div>
                 </div>
                 <hr id="linha">
+                
                 <hr id="linha">
+                
             </div>
         </div>
     </div>
@@ -125,10 +144,10 @@
     <div class="container">
         <div class="container" id="vitrine-camisas">
             <div class="card-deck">
-                <div class="card" id="#produto-background">
+                <div class="card" id="produto-background">
                     <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{tituloCamisa}}1</h5>
+                        <h5 class="card-title">{{tituloCamisa}}</h5>
                         <p class="card-text">{{descricaoCamisa}}</p>
                         <p class="card-text"><small class="text-dark">{{unidadeCamisa}}</small></p>
                     </div>

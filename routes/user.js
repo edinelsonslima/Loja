@@ -6,5 +6,4 @@ const router = express.Router()
     router.get('/', (req, res) => {
         res.render('userIndex');
     })
-
 module.exports = router
