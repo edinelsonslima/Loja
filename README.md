@@ -5,7 +5,7 @@
 
 <img src="https://img.shields.io/static/v1?label=Version&message=1.0&color=7159c1&style=for-the-badge&logo=ghost"/>
 
-<h1 align="center">Tabel de conteúdo </h1>
+<h1 align="center">Tabela de conteúdo </h1>
 
 <!--ts-->
    * [Loja virtual](#lojaVirtual)
@@ -39,4 +39,8 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 - [Node.js](https://nodejs.org/en/)
 - [JavaScript](https://www.javascript.com/)
 - [CSS](https://pt.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [Handlebars](https://handlebarsjs.com/)
+- [Express](https://expressjs.com/pt-br/)
+- [Sequelize](https://sequelize.org/)
+- [Mysql2](https://www.npmjs.com/package/mysql2)
 
