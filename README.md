@@ -36,11 +36,13 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 <h1 align="center"> 🛠 Tecnologias </h1>
 
-- [Node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)  v14.16.0 
+- [Express](https://expressjs.com/pt-br/) v4.17.1
+- [Sequelize](https://sequelize.org/) v6.5.1
+- [Mysql2](https://www.npmjs.com/package/mysql2) v2.18.1
+- [Body-Parser](https://www.npmjs.com/package/body-parser) v1.19.0
+- [Express-Handlebars](https://handlebarsjs.com/)  v5.2.1
+- [Multer](https://www.npmjs.com/package/multer) v1.4.2
 - [JavaScript](https://www.javascript.com/)
 - [CSS](https://pt.wikipedia.org/wiki/Cascading_Style_Sheets)
-- [Handlebars](https://handlebarsjs.com/)
-- [Express](https://expressjs.com/pt-br/)
-- [Sequelize](https://sequelize.org/)
-- [Mysql2](https://www.npmjs.com/package/mysql2)
 
