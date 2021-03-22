@@ -9,8 +9,8 @@
                         <h4 style="text-align:center">Adicionar Bone</h4>
                         <hr id="linha" />
                         <!--FORM PARA EDITAR IMAGEM PRODUTO BONE-->
-                        <form action="produtosAlterar/bone" method="post">
-                            <label>Imagem do Bone:</label>
+                        <form action="adicionarBone/bone" method="post">
+                            <label>Imagem:</label>
                             <label>
                                 <span class="input-file-btn">
                                     <input type="file" name="imagemBone" hidden />
@@ -21,16 +21,14 @@
                             <hr />
                     
                             <!--EDITAR CARACTERISTICAS PRODUTO BONE-->
-                            <label>Titulo ou Marca do Bone: </label>
+                            <label>Marca: </label>
                             <input class="btn btn-outline-light btn-sm" type="text" name="tituloBone" />
                             <hr />
-                            <label>Descricao do Bone:</label>
-                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoBone" />
-                            <hr />
-                            <label>Unidades disponiveis:</label>
-                            <input class="btn btn-outline-light btn-sm" type="text" name="unidadesBone" />
+                            <label>Valor:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="valorBone" />
                             <hr id="linha" />
-                            <button class="btn btn-outline-light" type="submit">ADICIONAR</button>                        
+                            <button id="botaoAdicionarBone" class="btn btn-outline-light" type="submit">ADICIONAR</button>
+                            <a href="maisOpcaoBone" class="btn btn-outline-light">MAIS OPÇÕES</a>                       
                             <hr />
                         </form>
                     </div>    
@@ -42,7 +40,7 @@
                         <hr id="linha" />
                         <!--FORM PARA EDITAR IMAGEM PRODUTO CAMISA-->
                         <form action="#" method="post">
-                            <label>Imagem do Camisa:</label>
+                            <label>Imagem:</label>
                             <label>
                                 <span class="input-file-btn">
                                     <input type="file" name="imagemCamisa" hidden />
@@ -53,14 +51,11 @@
                             <hr />
 
                             <!--EDITAR PRODUTO CAMISA-->
-                            <label>Titulo ou Marca da Camisa: </label>
+                            <label>Marca: </label>
                             <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCamisa" />
                             <hr />
-                            <label>Descricao da Camisa:</label>
-                            <input class="btn btn-outline-light btn-sm" type="text" name="descricaoCamisa" />
-                            <hr />
-                            <label>Unidades disponiveis:</label>
-                            <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCamisa" />
+                            <label>Valor:</label>
+                            <input class="btn btn-outline-light btn-sm" type="text" name="valorCamisa" />
                             <hr id="linha" />
                             <button class="btn btn-outline-light" type="submit">ADICIONAR</button>
                             <hr />
@@ -87,13 +82,10 @@
                         <hr />
 
                         <!--EDITAR CARACTERISTICAS DO PRODUTO CARTEIRA-->
-                        <label>Titulo ou Marca da Carteira: </label>
+                        <label>Marca: </label>
                         <input class="btn btn-outline-light btn-sm" type="text" name="tittuloCarteira" />
                         <hr />
-                        <label>Descricao da Carteira:</label>
-                        <input class="btn btn-outline-light btn-sm" type="text" name="descricaoCarteira" />
-                        <hr />
-                        <label>Unidades disponiveis:</label>
+                        <label>Valor:</label>
                         <input class="btn btn-outline-light btn-sm" type="text" name="unidadesCarteira" />
                         <hr id="linha" />
                         <button class="btn btn-outline-light" type="submit">ADICIONAR</button>

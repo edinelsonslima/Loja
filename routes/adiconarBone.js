@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const Post = require("./../models/Post");
+const Post = require("../models/Post");
 
 //Rotas
     //Recebe os Input Text do form bone no Admin e Guarda no db Loja table bone
@@ -8,8 +8,7 @@ const Post = require("./../models/Post");
             Post.create({
                 imagemBone: req.body.imagemBone,
                 marcaBone: req.body.tituloBone,
-                descricaoBone: req.body.descricaoBone,
-                unidadesBone: req.body.unidadesBone
+                valorBone: req.body.valorBone
             }).then(function(){
                 res.redirect('/admin');
             }).catch(function(erro){

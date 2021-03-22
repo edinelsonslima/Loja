@@ -1,4 +1,4 @@
-//CONFIG BOTÃO ENVIAR DA LOGO
+//CONFIG BOTAO ENVIAR DA LOGO
 var botao = document.querySelector("#botaoEnviarLogo");
 
 botao.addEventListener('click', (event) => {
@@ -12,7 +12,7 @@ botao.addEventListener('click', (event) => {
 })
 
 
-//CONFIG BOTÃO ENVIAR DO SLIDE 1
+//CONFIG BOTAO ENVIAR DO SLIDE 1
 var botao = document.querySelector("#botaoEnviarSlide1");
 
 botao.addEventListener('click', (event) => {
@@ -25,7 +25,7 @@ botao.addEventListener('click', (event) => {
     }
 })
 
-//CONFIG BOTÃO ENVIAR DO SLIDE 2
+//CONFIG BOTAO ENVIAR DO SLIDE 2
 var botao = document.querySelector("#botaoEnviarSlide2");
 
 botao.addEventListener('click', (event) => {
@@ -38,7 +38,7 @@ botao.addEventListener('click', (event) => {
     }
 })
 
-//CONFIG BOTÃO ENVIAR DO SLIDE 3
+//CONFIG BOTAO ENVIAR DO SLIDE 3
 var botao = document.querySelector("#botaoEnviarSlide3");
 
 botao.addEventListener('click', (event) => {

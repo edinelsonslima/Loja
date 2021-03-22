@@ -71,7 +71,7 @@
 
 <hr id="linha">
 
-<!--Bot�es de op��es-->
+<!--Botoes de opcoes-->
 <section>
     <div class="row-col" id="opcoes">
         <button id="Aba0" href="#" class="btn btn-outline-light mx-4"> BON�S       </button>
@@ -83,28 +83,28 @@
 
 <hr id="linha">
 
-<!--Se��es de venda-->
+<!--Secoes de venda-->
 
 <main>
-    <!--Bon�s-->
-    <div class="container">
-        <div class="container" id="vitrine-bone">
-            <div class="card-deck">
+    <!--Bones-->
+    <div class="container" id="vitrine-bone">
+        <div class="row">
+            {{#each produto}}
+            <div class="col-sm-4 col-md-3">
                 <div class="card" id="produto-background">
-                    <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                       {{#each produto}}
-                        <h5 class="card-title">{{dataValues.marcaBone}}</h5>
-                        <p class="card-text">{{dataValues.descricaobone}}</p>
-                        <p class="card-text"><small class="text-dark">{{dataValues.unidadesBone}}</small></p>
-                       {{/each}} 
-                    </div>
-                </div>                 
+                <img src="http://localhost:8080/public/images/logo.png"{{dataValues.imagemBone}} class="card-img">
+                <div class="card-body">
+                    <h5 class="card-title">{{dataValues.marcaBone}}</h5>
+                    <p class="card-text text-dark">{{dataValues.valorBone}}</p>
+                </div> 
+                </div>
                 <hr id="linha">
-            </div>
+            </div> 
+            {{/each}}               
         </div>
     </div>
-
+ 
+ <!--DAQUI PRA BAIXO AINDA VAI SER FEITO-->
     <!--Carteiras-->
     <div class="container">
         <div class="container" id="vitrine-carteiras">
@@ -132,7 +132,7 @@
                 <div class="card" id="produto-background">
                     <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{tituloCamisa}}</h5>
+                        <h5 class="card-title">{{a}}</h5>
                         <p class="card-text">{{descricaoCamisa}}</p>
                         <p class="card-text"><small class="text-dark">{{unidadeCamisa}}</small></p>
                     </div>

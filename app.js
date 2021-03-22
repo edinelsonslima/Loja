@@ -2,7 +2,6 @@
     const express = require('express')
     const handlebars = require('express-handlebars')
     const bodyParser = require("body-parser")
-    //const mysql = require('mysql2')
     const app = express()
 
 //Modulos da Pasta Routes
@@ -12,8 +11,7 @@
     const recebeSlide1= require("./routes/recebeSlide1")
     const recebeSlide2 = require("./routes/recebeSlide2")
     const recebeSlide3 = require("./routes/recebeSlide3")
-    const produtosAlterar = require("./routes/produtosAlterar")
-
+    const adicionarBone = require("./routes/adiconarBone")
 //configs
     //Pasta Static
         app.use('/public', express.static(__dirname + '/public'))
@@ -35,7 +33,8 @@
         app.use('/recebeSlide2', recebeSlide2)
         app.use('/recebeSlide3', recebeSlide3)
     //Descrição dos Produtos
-        app.use('/produtosAlterar', produtosAlterar)
+        app.use('/adicionarBone', adicionarBone)
+
 
 //Criando servidor http://localhost:8080/
 app.listen(8080, function () {

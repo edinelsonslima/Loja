@@ -4,7 +4,7 @@
         var vitrineCamisas = document.querySelector("#vitrine-camisas");
 
 
-        //Seleção da Nav
+        //Selecao da Nav
         var navBone = document.querySelector("#nav0");
         var navCarteiras = document.querySelector("#nav1");
         var navCamisas = document.querySelector("#nav2");
@@ -31,9 +31,9 @@
         vitrineCamisas.classList.remove("abaOff");
     })
 
-    //--------------------------------------------------------------------//
+//--------------------------------------------------------------------//
 
-    //Selecões dos Botões
+    //Selecoes dos Botoes
     var botaoBone = document.querySelector("#Aba0");
     var botaoCarteiras = document.querySelector("#Aba1");
     var botaoCamisas = document.querySelector("#Aba2");
