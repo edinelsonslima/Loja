@@ -1,6 +1,6 @@
 const db = require('./db');
 
-const post = db.sequelize.define('bone', {
+const bone = db.sequelize.define('bones', {
   imagemBone:{
     type: db.Sequelize.BLOB
   },
@@ -15,6 +15,39 @@ const post = db.sequelize.define('bone', {
   }
 })
 
-//post.sync({force: true});
+const camisa = db.sequelize.define('camisas',{
+  imagemCamisa:{
+    type: db.Sequelize.BLOB
+  },
+  marcaCamisa:{
+    type: db.Sequelize.STRING
+  },
+  descricaoBone:{
+    type: db.Sequelize.STRING
+  },
+  unidadesCamisa:{
+    type: db.Sequelize.STRING
+  }
+})
 
-module.exports = post;
+const carteira = db.sequelize.define('carteiras', {
+  imagemCarteira:{
+    type: db.Sequelize.BLOB
+  },
+  marcaCarteira:{
+    type: db.Sequelize.STRING
+  },
+  descricaoCarteira:{
+    type: db.Sequelize.STRING
+  },
+  unidadesCarteira:{
+    type: db.Sequelize.STRING
+  }
+})
+
+//bone.sync({force: true});
+//carteira.sync({force: true});
+//camisa.sync({force: true});
+
+
+module.exports = bone;

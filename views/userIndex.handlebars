@@ -93,29 +93,14 @@
                 <div class="card" id="produto-background">
                     <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{dataValues.marcaBone}}oi</h5>
+                       {{#each produto}}
+                        <h5 class="card-title">{{dataValues.marcaBone}}</h5>
                         <p class="card-text">{{dataValues.descricaobone}}</p>
                         <p class="card-text"><small class="text-dark">{{dataValues.unidadesBone}}</small></p>
+                       {{/each}} 
                     </div>
                 </div>                 
                 <hr id="linha">
-                <div class="card" id="produto-background">
-                    <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"> {{{bone.marca}}}</h5>
-                        <p class="card-text">{{bone.descricao}}</p>
-                        <p class="card-text"><small class="text-dark">{{bone.unidades}}</small></p>
-                    </div>                    
-                </div>
-                <hr id="linha">
-                <div class="card" id="produto-background">
-                    <img src="http://localhost:8080/public/images/logo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"> {{{bone.marca}}}</h5>
-                        <p class="card-text">{{bone.descricao}}</p>
-                        <p class="card-text"><small class="text-dark">{{bone.unidades}}</small></p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

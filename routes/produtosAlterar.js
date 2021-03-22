@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-//const bone = require("./../models/bone")
 const Post = require("./../models/Post");
 
 //Rotas

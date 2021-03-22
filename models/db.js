@@ -10,7 +10,7 @@ const Sequelize = require('sequelize');
   sequelize.authenticate().then(function(){
   	console.log("DB Conectado com sucesso!!!");
   		}).catch(function(erro){
-  	console.log("Falha ao se conectar: " +erro);
+  	console.log("Falha ao se conectar: " + erro);
   		})
 
   module.exports = {
