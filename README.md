@@ -37,10 +37,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 <h1 align="center"> 🛠 Tecnologias </h1>
 
 <img src="public/images/git-img/nodejs.png" width="200px">
-<img src="public/images/git-img/express.png" width="200px"> v4.17.1
-<img src="public/images/git-img/sequelize.png" width="200px">v6.5.1
-<img src="public/images/git-img/mySQL1.png" width="200px"> v2.18.1
-<img src="public/images/git-img/handlebars.jpg" width="200px"> v5.2.1
+<img src="public/images/git-img/express.png" width="200px"> 
+<img src="public/images/git-img/sequelize.png" width="200px">
+<img src="public/images/git-img/mySQL1.png" width="200px"> 
+<img src="public/images/git-img/handlebars.jpg" width="200px">
 <img src="public/images/git-img/javascript.png" width="200px">
 <img src="public/images/git-img/css.jpg" width="200px">
 
