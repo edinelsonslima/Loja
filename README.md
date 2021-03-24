@@ -41,6 +41,6 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 <img src="public/images/git-img/sequelize.png" width="200px">
 <img src="public/images/git-img/mySQL1.png" width="200px"> 
 <img src="public/images/git-img/handlebars.jpg" width="200px">
-<img src="public/images/git-img/javascript.png" width="200px">
-<img src="public/images/git-img/css.png" width="150px">
+<img src="public/images/git-img/javascript.png" width="140px">
+<img src="public/images/git-img/css.png" width="100px">
 
