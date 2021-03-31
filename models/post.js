@@ -14,8 +14,6 @@ const db = require('./db');
     }
   })
 
-//bone.sync({force: true});
-
-
+bone.sync({force: true});
 
 module.exports = bone;

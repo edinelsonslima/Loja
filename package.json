@@ -1,0 +1,31 @@
+{
+  "name": "loja",
+  "version": "1.0.0",
+  "description": "Projeto-loja",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "mongodb": "^3.6.5",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edlima98/Loja.git"
+  },
+  "keywords": [
+    "1542"
+  ],
+  "author": "edinelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edlima98/Loja/issues"
+  },
+  "homepage": "https://github.com/edlima98/Loja#readme"
+}
