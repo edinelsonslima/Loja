@@ -22,25 +22,14 @@ body {
     width: 300px;
 }
 
-#Aba0 {
-    margin-top: 5px
-}
+.Aba0 {
 
-#Aba1 {
-    margin-top: 5px
+    @media screen and (min-width:1024px)
+    right: 100px;
 }
-
-#Aba2 {
-    margin-top: 5px
-}
-
-#Aba3 {
-    margin-top: 5px
-}
-
 
 #produto-background {
-    background-color: gray;
+background-color: gray;
 }
 
 #opcoes {

@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
 
 	//Conexão com BD MySQL
-	const sequelize = new Sequelize ('loja', 'root', 'senha', {
-		host: "33060",
+	const sequelize = new Sequelize ('loja', 'root', 'Qwerty@270103', {
+		host: "localhost",
 		dialect: 'mysql'
 	})
 
